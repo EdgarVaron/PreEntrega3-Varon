@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 0.3fr 1.7fr;
+    grid-template-rows: 0.4fr 1.6fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "img_logo menu"
+        ". ."
+        ". .";
+}
+
+header {
+    height: 20vh;
+}
+.img_logo {
+    grid-area: img_logo;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+
+.img_logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+nav ul {
+    width: 80vw;
+
+}
+
+nav li {
+    display: inline-block;
+    width: 15%;
+    padding: 5px 10px;
+    background-color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    color: #fff;
+    margin: 50px;
+}
+
+nav li:hover {
+    background-color: #fff;
+    color: #000;
+
+}
+
+
+.img__index {
+    display: block;
+    margin: auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.miembros {
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+
+.intro__p {
+    text-align: center;
+    text-decoration: dashed;
+}
+
+.intro__disco {
+    width: 100%;
+    background-color: #fff;
+    background-image: url(../recursos/cuarteto_vinilo.jpg);
+    background-size: 30%;
+    background-repeat: repeat-x;
+}
+
+.historia__intro {
+    background-color: #fff;
+    background-image: url(../recursos/cuarte_4.jpg);
+    color: black;
+    font-size: larger;
+
+}
