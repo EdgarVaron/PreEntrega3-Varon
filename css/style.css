@@ -128,14 +128,29 @@ background: linear-gradient(187deg, rgba(229,229,229,1) 36%, rgba(252,163,17,1) 
 
 /* Tamaño pequeño */
 @media (max-width: 420px){
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    .menu{
-        display: block;
-        color: aqua;
-    }
+    header {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.1fr 00.1fr 0.1fr 0.1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "img_logo"
+          "menu_historia"
+          "menu_discografia"
+          "menu_fechas"
+          "menu_contacto";
+      }
+      
+      .img_logo { grid-area: img_logo; }
+      
+      .menu_historia { grid-area: menu_historia; }
+      
+      .menu_discografia { grid-area: menu_discografia; }
+      
+      .menu_fechas { grid-area: menu_fechas; }
+      
+      .menu_contacto { grid-area: menu_contacto; }
+      
+      
 }
