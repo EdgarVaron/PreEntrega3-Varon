@@ -19,6 +19,7 @@ header {
 header {
     height: 15vh;
     background-color: #fca311;
+    
 }
 .img_logo {
     grid-area: img_logo;
@@ -110,4 +111,29 @@ background: linear-gradient(187deg, rgba(229,229,229,1) 36%, rgba(252,163,17,1) 
     color: black;
     font-size: larger;
 
+}
+
+/* Tamaño mediano */
+@media (max-width: 768px){
+ body {
+    background-color: aliceblue;
+ }
+ header {
+    display: block;
+ }
+
+}
+
+/* Tamaño pequeño */
+@media (max-width: 420px){
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu{
+        display: block;
+        color: aqua;
+    }
 }
