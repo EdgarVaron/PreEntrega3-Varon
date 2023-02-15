@@ -40,8 +40,8 @@ footer {
 }
 
 .intro{
-    background: rgb(229,229,229);
-background: linear-gradient(187deg, rgba(229,229,229,1) 36%, rgba(252,163,17,1) 61%, rgba(20,33,61,1) 90%);
+    background: rgb(252,163,17);
+    background: linear-gradient(187deg, rgba(252,163,17,1) 30%, rgba(229,229,229,1) 59%, rgba(20,33,61,1) 73%);
 }
 
 .intro__p {
